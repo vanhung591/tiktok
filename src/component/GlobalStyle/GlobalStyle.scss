@@ -1,0 +1,18 @@
+//font tiktok Proxima Nova, Sofia Pro
+@import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700');
+
+:root {
+    --primary: #fe2c55;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizeSpeed;
+}
