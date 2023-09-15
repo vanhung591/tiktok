@@ -1,6 +1,6 @@
 //font tiktok Proxima Nova, Sofia Pro
 @import 'normalize.css';
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700');
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700');
 
 :root {
     --primary: #fe2c55;
@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'TikTokDisplayFont', 'TikTokFont';
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
@@ -41,6 +41,27 @@ a[href] {
     text-decoration: none;
 }
 
+// font add
+@font-face {
+    font-family: TikTokDisplayFont;
+    src: url('/assets//Font//TikTokDisplayFont-Bold.woff2');
+    font-weight: 700;
+}
+@font-face {
+    font-family: TikTokDisplayFont;
+    src: url('/assets//Font/TikTokDisplayFont-Semibold.woff2');
+    font-weight: 600;
+}
+@font-face {
+    font-family: TikTokFont;
+    src: url('/assets//Font/TikTokFont-Regular.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: TikTokFont;
+    src: url('/assets//Font//TikTokFont-Semibold.woff2');
+    font-weight: 700;
+}
 body {
     .tippy-box {
         border-radius: 8px;

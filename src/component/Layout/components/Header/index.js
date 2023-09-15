@@ -8,7 +8,6 @@ import {
     faEarthAsia,
     faCircleQuestion,
     faKeyboard,
-    faUpload,
     faUser,
     faCoins,
     faGear,
@@ -26,6 +25,8 @@ import styles from './Header.module.scss';
 import images from '~/assets/images';
 import AcountItem from '~/component/AcountItem';
 import Menu from '~/component/Popper/Menu';
+import { UploadIcon } from '~/component/icons';
+import Image from '~/component/images';
 
 const cx = classNames.bind(styles);
 const MENU_ITEMS = [
@@ -133,7 +134,7 @@ function Header() {
                         <>
                             <Tippy delay={(0, 200)} content="Upload Video" placement="bottom">
                                 <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faUpload} />
+                                    <UploadIcon />
                                 </button>
                             </Tippy>
                         </>
@@ -146,7 +147,7 @@ function Header() {
 
                     <Menu items={currentUser ? userMenu : MENU_ITEMS} onChange={handleMenuChange}>
                         {currentUser ? (
-                            <img
+                            <Image
                                 className={cx('user-avatar')}
                                 src="https://p16-sign-useast2a.tiktokcdn.com/tos-useast2a-avt-0068-giso/fcb579b744335a015886851f7d32979b~c5_100x100.jpeg?x-expires=1694268000&x-signature=sl2jVd0UNCxPyq84U9wghGoKPKI%3D"
                                 alt="Nguyễn Văn Ánh"
